@@ -1,7 +1,0 @@
----
-title: Software Engineering
-layout: full
-toc: false
----
-
-## Check Back Soon!

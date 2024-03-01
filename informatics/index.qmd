@@ -1,7 +1,0 @@
----
-title: Informatics
-layout: full
-toc: false
----
-
-## Check Back Soon!
