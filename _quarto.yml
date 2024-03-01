@@ -1,0 +1,44 @@
+project:
+  type: website
+  preview:
+    port: 5550
+    browser: false
+    watch-inputs: true
+    navigate: false
+
+website:
+  title: "Code with Chompers"
+  search:
+    location: navbar
+  reader-mode: false
+  back-to-top-navigation: true
+  page-navigation: true
+  favicon: "icons/algorithmology.png"
+  open-graph: true
+  site-url: https://www.algorithmology.org/
+  repo-url: https://github.com/Algorithmology/www.algorithmology.org
+  navbar:
+    right:
+      - softwareengineering/index.qmd
+      - computerscience/index.qmd
+      - informatics/index.qmd
+      - datascience/index.qmd
+
+  page-footer:
+    right:
+      - text: "{{< iconify fa github size=18px >}}"
+        href: https://github.com//Code-With-Chompers
+      - text: "{{< iconify bi rss-fill size=18px >}}"
+        href: "blog/index.xml"
+
+format:
+  html:
+    mainfont: Inter
+    monofont: Ubuntu Mono
+    fontsize: 1.25em
+    theme: zephyr
+    highlight-style: github
+    css: css/styles.css
+
+execute:
+  freeze: auto

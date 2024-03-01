@@ -1,0 +1,24 @@
+---
+title: Software Engineering
+layout: full
+toc: true
+listing:
+  - id: featured-presentations
+    type: default
+    sort-ui: true
+    filter-ui: true
+    fields: [date,title,description]
+    field-display-names:
+      description: "Question"
+    contents:
+      - "slides/**/*.qmd"
+    sort:
+      - "date"
+      - "title"
+      - "description"
+---
+
+## Check Back Soon!
+
+:::{#featured-presentations}
+:::

@@ -1,0 +1,77 @@
+---
+title: "Introduction to Software Testing"
+description: "What are the key principles of Software Testing and why are they important?"
+date: "2024-02-29"
+date-format: long
+author: Lauren Nevill and Gregory Kapfhammer
+format:
+  revealjs:
+    theme: default
+    css: styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "CodewithChompers"
+---
+
+# What is Software Testing?
+
+::: incremental
+- 
+:::
+
+## Automated Tests
+
+::: incremental
+- 
+:::
+
+## Why is Software Testing Important?
+
+::: incremental
+- 
+:::
+
+## Examples of Unit Tests
+
+
+::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.9em;"}
+
+> 
+
+:::
+
+## Using the `pytest` tool
+
+```{code-line-numbers="true" code-block-border="true"}
+ Usage: pytest [OPTIONS] COMMAND [ARGS]...
+╭─ Commands ────────────────────────────────────────────────╮
+│ benchmarkinfo  Benchmark the system used for experiments. │
+│ completeinfo   Detect information about and then          │
+│                benchmark the system used for experiments. │
+│ systeminfo     Detect all relevant information about the  │
+│                system used for experiments.               │
+╰───────────────────────────────────────────────────────────╯
+```
+
+## Learn More About Software Testing
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+{{< iconify fa6-solid book-open >}} Read chapters 11 in "[Software Engineering with Google](https://abseil.io/resources/swe-book)"
+
+:::
+
+::::
+
+::: {.fragment .fade-down style="font-size: 0.9em;"}
+
+- The SE book is both "simple" and "complex"
+- Coverage of introductory topics:
+  - Automated Testing
+  - Unit testing
+
+:::
