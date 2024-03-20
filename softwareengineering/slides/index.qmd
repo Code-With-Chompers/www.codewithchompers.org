@@ -18,29 +18,72 @@ format:
 # What is Software Testing?
 
 ::: incremental
-- 
-:::
-
-## Automated Tests
-
-::: incremental
-- 
+- A way of validating and verifying your code works as intended
+- A critical practice of software engineering
 :::
 
 ## Why is Software Testing Important?
 
 ::: incremental
-- 
+- Detect bugs early, before they become expensive
+- Improve system design
+- Support the ability to change
+  - Quickly catch mistakes so you can make changes confidently
+  - A robust testing system helps navigate changes
 :::
 
-## Examples of Unit Tests
+## Automated Tests
 
-
-::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.9em;"}
-
-> 
-
+::: incremental
+- Manual Tests: 
+  - Throwing sample data into a program to see if you get expected outcome
+  - Slow and inefficient
+  - More room for error
+- Automated Tests:
+  - Creating test cases that automatically test the functionality of your program
+    - efficient
+    - consistent
+    - repeatable
 :::
+
+## Unit Testing
+
+::: incremental
+- tests with a narrow scope
+  - tests a single class, method, or function
+  - conceptually simple
+- Unit tests are smaller and run frequently
+- Easy to write alongside the tested code
+- Promote test coverage
+- MAINTAINABLE
+:::
+
+# Writing a unit test
+- Function name: test_function
+- assert statement
+  - assertions are about ensuring 
+  - `actual == expected`
+```python
+# Sample function that squares a number
+def square_integer(x):
+    return x * x
+```
+```python
+# Ensure you can acces square_integer to test it
+from square import square_integer
+
+def test_square_positive():
+    """Ensure that a positive integer of 2 works as expected."""
+    number = 2
+    result = square.square_integer(number)
+    assert result == 4
+
+def test_square_negative():
+    """Ensure that a positive integer of -2 works as expected."""
+    number = -2
+    result = square.square_integer(number)
+    assert result == 4
+```
 
 ## Using the `pytest` tool
 
