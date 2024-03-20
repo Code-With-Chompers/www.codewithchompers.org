@@ -19,7 +19,7 @@ listing:
 ---
 
 ## Slides
-Interetsed in learning more about some of the core principles of software engineering? Take a look at these slide decks to get started. Each deck covers different topics relevant to software engineering.
+Interested in learning more about some of the core principles of software engineering? Take a look at these slide decks to get started. Each deck covers different topics relevant to software engineering.
 
 :::{#featured-presentations}
 :::

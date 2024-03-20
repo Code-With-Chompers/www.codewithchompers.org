@@ -65,15 +65,17 @@ format:
 - assert statement
   - assertions are about ensuring 
   - `actual == expected`
+  - only produce output when they are false
 :::
 
-## Sample function and test
+## Sample function and tests
 
 ```python
 # Sample function that squares a number
 def square_integer(x):
     return x * x
 
+# Test cases for square_integer
 def test_square_positive():
     number = 2
     result = square_integer(number)
