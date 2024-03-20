@@ -1,7 +1,7 @@
-t---
+---
 title: "Introduction to Software Testing"
 description: "What are the key principles of Software Testing and why are they important?"
-date: "2024-02-29"
+date: "2024-03-20"
 date-format: long
 author: Lauren Nevill and Gregory Kapfhammer
 format:
@@ -32,7 +32,7 @@ format:
   - A robust testing system helps navigate changes
 :::
 
-## Automated Tests
+## Automated vs. Manual Tests
 
 ::: incremental
 - Manual Tests: 
@@ -59,43 +59,34 @@ format:
 :::
 
 # Writing a unit test
+
+::: incremental
 - Function name: test_function
 - assert statement
   - assertions are about ensuring 
   - `actual == expected`
+:::
+
+## Sample function and test
+
 ```python
 # Sample function that squares a number
 def square_integer(x):
     return x * x
-```
-```python
-# Ensure you can acces square_integer to test it
-from square import square_integer
 
 def test_square_positive():
-    """Ensure that a positive integer of 2 works as expected."""
     number = 2
-    result = square.square_integer(number)
+    result = square_integer(number)
     assert result == 4
 
 def test_square_negative():
-    """Ensure that a negative integer of -2 works as expected."""
     number = -2
-    result = square.square_integer(number)
+    result = square_integer(number)
     assert result == 4
-```
 
-## Using the `pytest` tool
-
-```{code-line-numbers="true" code-block-border="true"}
- Usage: pytest [OPTIONS] COMMAND [ARGS]...
-╭─ Commands ────────────────────────────────────────────────╮
-│ benchmarkinfo  Benchmark the system used for experiments. │
-│ completeinfo   Detect information about and then          │
-│                benchmark the system used for experiments. │
-│ systeminfo     Detect all relevant information about the  │
-│                system used for experiments.               │
-╰───────────────────────────────────────────────────────────╯
+print(square_integer(2))
+print(test_square_positive())
+print(test_square_negative())
 ```
 
 ## Learn More About Software Testing
