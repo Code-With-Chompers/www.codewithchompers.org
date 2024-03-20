@@ -1,4 +1,4 @@
----
+t---
 title: "Introduction to Software Testing"
 description: "What are the key principles of Software Testing and why are they important?"
 date: "2024-02-29"
@@ -79,7 +79,7 @@ def test_square_positive():
     assert result == 4
 
 def test_square_negative():
-    """Ensure that a positive integer of -2 works as expected."""
+    """Ensure that a negative integer of -2 works as expected."""
     number = -2
     result = square.square_integer(number)
     assert result == 4
